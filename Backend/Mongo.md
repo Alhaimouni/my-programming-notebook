@@ -1,19 +1,27 @@
-how to show my mongodb contents :
+# For more details visit
+ 
+[MongooseJs](https://mongoosejs.com/docs/index.html)
 
-1- start mongodb : sudo service mongodb start // should see [ OK ].
-2- see monog status : mongo  // should see the status and version.
-3- we are inside mongo , write show dbs to see all the dbs we have.
-4- if u want to go insde one of dbs we have , write use <db name>.
-5- how to show what inside the db , write show collections.
-6- db.<collection name>.find()   or db.<collection name>.find().pretty()
+# how to show my mongodb contents with terminal:
 
-==========================================================================================================================
-https://mongoosejs.com/docs/index.html  note: how to use mongoose 
-==========================================================================================================================
+- start mongodb : sudo service mongodb start // should see [ OK ].
+- see monog status : mongo  // should see the status and version.
+- we are inside mongo , write show dbs to see all the dbs we have.
+- if u want to go insde one of dbs we have , write use <db name>.
+- how to show what inside the db , write show collections.
+- db.<collection name>.find()   or db.<collection name>.find().pretty()
+
+---
+	
 we can add new db using - use <new db name> - note: if i do show dbs i cant see it cuz its empty
-==========================================================================================================================
+
+---
+
+	
 mongoose.connect('mongodb://localhost:27017/<db name>')  note: connect my api with specific db in mongo until i make a model
-==========================================================================================================================
+
+---
+
 
 note : to create a new collection we need two things (schema and model)
 
@@ -29,21 +37,30 @@ let newData = new yModel({name:'ahmad',age:'20'});
 yModel.find({},(error, result)=>{(error)? : res.send(result)}) //requist from api server to mongo db 
 
 .find() //always returns an array
-==========================================================================================================================
+
+---
+	
+
 let person2 = new yModel({name:'ali',age:'27'})
 person2.save()   
 بدل م اعمل شخص واعمل بعديها حفظ ممكن ابدل هالخطوتين بخطوه وحده اسمها 
 create
 y.Model.create({name:'ali',age:'27'}) 
 هاي الحركه عملت نفس الي فوق تماما 
-==========================================================================================================================
+
+---
+	
 .save()
 .create()    
 باخدوا وقت ف ممكن اعمل معهم اذا طلب الامر 
 (async/await) or .then
-==========================================================================================================================
+
+---
+
 //axios.post(<endpoint>,<body object>)
-==========================================================================================================================
+
+---
+	
 from react : 
 let obj = { name : 'ahmad' , age : 25 , hoppy : 'motors'}
 let url = `http://localhost:3001/test`;
@@ -57,7 +74,9 @@ function handleTest(req, res) {
 	//server.use(express.json()) called middleware to decode any request body to json
 	.
 	.}
-==========================================================================================================================
+
+---
+	
 على فرض انا وديت فنكشن ك بروبس لكمبوننت تاني اسم الفنكشن بريس زي المثال تحت 
 <bottun OnClick={this.props.press}> Press Here </bottun>
 في حال بدي احط بالفنكش قيمه بين اقواس ما رح يزبط اكتبه زي فوق ,لازم احطه جوا فنكشن تاني زي المثال تحت 
@@ -68,7 +87,9 @@ deleteThing = ()=> {
 }
 
 <bottun OnClick={this.deleteThing}> Press Here </bottun>
-===========================================================================================================================
+
+---
+	
 how to delete : 
 
 from server :
