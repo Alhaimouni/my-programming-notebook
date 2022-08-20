@@ -9,7 +9,7 @@
 - we are inside mongo , write show dbs to see all the dbs we have.
 - if u want to go insde one of dbs we have , write use <db name>.
 - how to show what inside the db , write show collections.
-- db.<collection name>.find()   or db.<collection name>.find().pretty()
+- db.collection name.find()   or  db.collection name.find().pretty()
 
 ---
 	
